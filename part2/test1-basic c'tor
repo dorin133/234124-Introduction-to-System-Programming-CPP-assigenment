@@ -1,0 +1,20 @@
+Dimensions dims1(2,2);
+    Matrix<int> A(dims1, 4);
+    Matrix<int> B = A; // copy c'tor test
+    assert (B(1,1)==4);
+    assert (B(0,1)!=3);
+    Matrix<int> C(dims1, 2);
+    C = A; // assignment operator test
+    assert (A.height()==dims1.getRow()); //height test
+    assert (A.width()==dims1.getCol()); //width test
+    assert (A.size()==4);
+    for (int i=0; i<C.height(); i++) 
+    {
+        for (int j=0; j<C.width(); j++)
+        {
+            assert (C(i,j)==A(i,j));
+        }
+    }
+    C(0,0)=17;
+    assert (C(0,0)==17); //operator () test
+    return 0;

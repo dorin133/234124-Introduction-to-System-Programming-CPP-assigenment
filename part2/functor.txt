@@ -1,0 +1,16 @@
+#include <cmath>
+#include <string>
+class Reduction {
+    public:
+    string operator()(string val)
+    {
+        if(val.string::length()<=3)
+        {
+            return val+" WTF";
+        }
+        else
+        {
+            return val+" harta harta";
+        }
+    }
+};

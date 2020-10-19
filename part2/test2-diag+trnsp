@@ -1,0 +1,35 @@
+    Dimensions dims(2,3);
+    Matrix<double> mat_1(dims, 35);
+    mat_1(0,0) = 11;
+    mat_1(1,0) = 11;
+    for (int i=0; i<mat_1.height(); i++) 
+    {
+        for (int j=0; j<mat_1.width(); j++)
+        {
+            cout<<mat_1(i,j);
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+    cout<<endl;
+    Matrix<int> diag_1 = Matrix<int>::Diagonal(3, 55);
+    for (int i=0; i<diag_1.height(); i++) 
+    {
+        for (int j=0; j<diag_1.width(); j++)
+        {
+            cout<< diag_1(i,j);
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+    cout<<endl;
+    Matrix<double> mat_2 = mat_1.transpose();
+    for (int i=0; i<mat_2.height(); i++) 
+    {
+        for (int j=0; j<mat_2.width(); j++)
+        {
+            cout<<mat_2(i,j);
+            cout<<" ";
+        }
+        cout<<endl;
+    }
