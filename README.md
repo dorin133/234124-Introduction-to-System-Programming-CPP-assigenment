@@ -1,4 +1,4 @@
-# mtm-CPP-assigenment
+# 234124-Introduction-to-System-Programming-CPP-assigenment
 
 ### part 1 - intMatrix class
 
