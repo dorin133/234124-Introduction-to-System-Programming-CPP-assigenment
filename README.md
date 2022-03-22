@@ -1,5 +1,7 @@
 # 234124-Introduction-to-System-Programming-CPP-assigenment
 
+For the full instructions, view the PDF 'HW3 - instructions MATAM'
+
 ### part 1 - intMatrix class
 
 - implementations for const_Matrix / Matrix ADT of type int + const_iterator / iterator ADT  (Constructor, Copy Constructor, Destructor, Operator=, Operator*, Transpose, etc.)
